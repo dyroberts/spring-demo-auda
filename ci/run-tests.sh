@@ -2,4 +2,4 @@
 
 cd spring-demo
 
-./gradlew test
+./gradlew test --info
