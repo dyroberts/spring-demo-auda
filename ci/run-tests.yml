@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: openjdk
+    tag: latest
+
+inputs:
+- name: spring-demo
+
+run:
+  path: spring-demo/ci/run-tests.sh

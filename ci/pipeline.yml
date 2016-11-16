@@ -1,0 +1,15 @@
+resources:
+- name: spring-demo
+  type: git
+  source:
+    uri: git@github.com:pivotal-dylan-roberts/spring-demo-auda.git
+    branch: master
+    private_key: {{private-repo-key}}
+
+jobs:
+- name: run-tests
+  plan:
+  - get: spring-demo
+    trigger: true
+  - task: run-tests-task
+    file: spring-demo/ci/run-tests.yml
