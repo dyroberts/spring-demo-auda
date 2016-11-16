@@ -1,0 +1,6 @@
+---
+applications:
+- name: spring-demo
+  instances: 3
+  host: spring-demo
+  path: demo-0.0.1-SNAPSHOT.jar
