@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export TERM=xterm
+
 cd spring-demo
 
-gradle test --info
+./gradlew test --info
