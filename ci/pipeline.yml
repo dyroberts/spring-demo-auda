@@ -30,6 +30,6 @@ jobs:
     trigger: true
     passed: [run-tests]
   - task: build
-    file: app-management/ci/build.yml
+    file: spring-demo/ci/build.yml
   - put: cf-dev
     params: { manifest: deploy/manifest.yml }
